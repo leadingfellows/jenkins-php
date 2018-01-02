@@ -38,6 +38,8 @@ RUN set -ex \
 	&& apk add --no-cache php7-mcrypt \
 	&& apk add --no-cache php7-bz2 php7-zip php7-zlib\
 	&& apk add --no-cache php7-ctype \
+	&& apk add --no-cache php7-simplexml \
+	&& apk add --no-cache php7-tokenizer \
 	&& apk add --no-cache --virtual .fetch-deps openssl \
 	&& apk add --no-cache php7-openssl \
 	&& sed -i "s|;*date.timezone =.*|date.timezone = ${TIMEZONE}|i" /etc/php7/php.ini \
