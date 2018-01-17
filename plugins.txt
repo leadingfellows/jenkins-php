@@ -18,6 +18,7 @@ greenballs
 workflow-aggregator
 ansicolor
 github
+authentication-tokens
 subversion
 cloudbees-folder
 build-timeout
